@@ -124,7 +124,7 @@ function App() {
           <div className="contract-address">
             <span className="ca-label">CA:</span>
             <code className="ca-address" onClick={copyToClipboard} title="Click to copy">
-              {contractAddress.slice(0, 6)}...{contractAddress.slice(-4)}
+              {contractAddress}
             </code>
             {copied && <span className="ca-copied">Copied!</span>}
           </div>

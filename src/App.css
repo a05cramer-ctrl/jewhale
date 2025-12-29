@@ -689,6 +689,9 @@
   border-radius: 4px;
   transition: all 0.3s ease;
   user-select: none;
+  word-break: break-all;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .ca-address:hover {
