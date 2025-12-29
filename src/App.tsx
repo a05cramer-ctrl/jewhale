@@ -4,7 +4,7 @@ import whaleImage from './fb72db54-468c-4e3f-a88f-564908b877f8.png'
 
 function App() {
   const [copied, setCopied] = useState(false)
-  const contractAddress = '0x0000000000000000000000000000000000000000' // Replace with actual contract address
+  const contractAddress = '3U6Qys1xzoDnX5Ab7R3Annm9pH7E65VsDmUFbZ8fpump'
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress)
