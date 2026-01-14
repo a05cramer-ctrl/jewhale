@@ -1,16 +1,7 @@
-import { useState } from 'react'
 import './App.css'
 import whaleImage from './fb72db54-468c-4e3f-a88f-564908b877f8.png'
 
 function App() {
-  const [copied, setCopied] = useState(false)
-  const contractAddress = 'PMqAgjTEYomFK75i4G7DEFa5RHbSUieAtivXjTnpump'
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(contractAddress)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
   return (
     <div className="app">
       {/* Background Stars */}
@@ -121,13 +112,6 @@ function App() {
       <footer className="footer">
         <div className="footer-watermark"></div>
         <div className="footer-content">
-          <div className="contract-address">
-            <span className="ca-label">CA:</span>
-            <code className="ca-address" onClick={copyToClipboard} title="Click to copy">
-              {contractAddress}
-            </code>
-            {copied && <span className="ca-copied">Copied!</span>}
-          </div>
           <div className="social-icons">
             <a href="https://x.com/JEWhalee" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="X (Twitter)">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
